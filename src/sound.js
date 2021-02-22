@@ -6,6 +6,8 @@ const audioWin = new Audio('./sound/game_win.mp3');
 const audioCarrot = new Audio('./sound/carrot_pull.mp3');
 const audioBug = new Audio('./sound/bug_pull.mp3');
 const audioClock = new Audio('./sound/clock.wav');
+const audioFireworks = new Audio('./sound/fireworks.mp3');
+
 
 const swooshSound = new Audio('./sound/swoosh.mp3');
 const blobSound = new Audio('./sound/blop.mp3');
@@ -58,6 +60,10 @@ export function stopClockSound() {
 
 export function playRecordSound() {
   playSound(recordSound);
+}
+
+export function playfireworksSound() {
+  playSound(audioFireworks);
 }
 
 function playSound(sound) {
