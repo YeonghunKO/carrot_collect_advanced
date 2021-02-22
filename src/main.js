@@ -15,7 +15,6 @@ game.onFinishBannerEvent(reason => {
   switch (reason) {
     case FinishReason.win:
       finishBanner.show('win');
-      sound.playWinSound();
       finishBanner.showNextStageBtn();
       break;
     case FinishReason.bug:
