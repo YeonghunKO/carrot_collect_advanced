@@ -101,7 +101,6 @@ export class RecordToggle {
     if (this.firstRankingSpan.innerHTML === '') {
       console.log('first record!');
       startFireworks();
-      stopFireworks();
       sound.playfireworksSound();
     } else if (difference > 0) {
       console.log('not that special');
@@ -110,7 +109,6 @@ export class RecordToggle {
     } else if (difference < 0) {
       console.log('new record');
       startFireworks();
-      stopFireworks();
       sound.playfireworksSound();
     }
   }
