@@ -1,6 +1,6 @@
 # carrot_collect_advanced
 
-## what has been added?
+## what has been changed?
 
 1. refactored by classes
 
