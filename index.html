@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collecting_carrot_game_back_up</title>
+
+    <link rel="shortcut icon" href="./img/carrot_favicon.png" />
+    <link rel="icon" href="./img/carrot_favicon.png" />
+
+    <script
+      src="https://kit.fontawesome.com/579c4d8c64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- main.js doesn't work without 'defer' keyword -->
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="background">
+      <img src="./img/background.png" class="bg_image" />
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <section class="top_ui">
+      <div class="top_divs">
+        <div class="toggle_box">
+          <div class="js_toggle open_toggle">Introduction</div>
+          <div class="record_toggle record_open_toggle">record</div>
+        </div>
+        <button class="play_button"><i class="fas fa-play"></i></button>
+        <span class="stage">Stage 1</span>
+      </div>
+
+      <div class="clock_box">
+        <img class="clock" src="./img/clock.png" alt="clock" />
+        <div class="time_display"></div>
+      </div>
+
+      <span class="count">0</span>
+    </section>
+
+    <ul class="play_field"></ul>
+
+    <div class="popup non_display">
+      <div class="replay">
+        <button class="replay_btn"><i class="fas fa-reply-all"></i></button>
+        <span>you won! replay?🎉</span>
+      </div>
+      <div class="next_stage non_display">
+        <button class="replay_btn"><i class="fas fa-forward"></i></button>
+        <span>Next stage?</span>
+      </div>
+    </div>
+
+    <div class="toggle_content swirl-out-bck non_display">
+      <header class="js_toggle header">close</header>
+      <section class="toggle_section non_display">
+        <h2>Introduction</h2>
+        <article>
+          Thanks for playing this game. Rules are really simple.
+        </article>
+        <div>■</div>
+        <article class="detail_description">
+          <span>🥇Goal: Collect all the carrots within the limited time.</span>
+          <span>💥Fail: Touch bugs / Time out.</span>
+          <span>Then good luck and hope you enjoy the game.🧡🤩</span>
+        </article>
+      </section>
+    </div>
+
+    <div class="record_content non_display">
+      <header class="record_toggle record_toggle_close">close</header>
+      <section class="record_section">
+        <h2>Final Stage Record</h2>
+        <div class="record_ranking">
+          <span class="first"></span>
+          <div class="from_second"></div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="./src/toggle.js"></script>
+  </body>
+</html>
