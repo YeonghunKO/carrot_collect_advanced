@@ -109,7 +109,7 @@ function explode() {
   //어느정도 시간지나면 '서서히' 없어지게끔 해봐라. 그리고 다시 시작했을때 원상복구하고
 }
 
-export function startFireworks() {
+export default function startFireworks() {
   canvas.style.zIndex = 2;
   makeFireworks();
   fireworkId = window.requestAnimationFrame(explode);
