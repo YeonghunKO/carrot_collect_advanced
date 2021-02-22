@@ -1,10 +1,12 @@
 # carrot_collect_advanced
 
-# refactored by classes
+## what has been added?
 
-# record function added
+1. refactored by classes
 
-# fireworks event added
+2. record function added
 
-# next level added
+3. fireworks event added
+
+4. next level added
 
