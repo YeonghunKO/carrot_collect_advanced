@@ -113,6 +113,7 @@ export function startFireworks() {
   canvas.style.zIndex = 2;
   makeFireworks();
   fireworkId = window.requestAnimationFrame(explode);
+  setTimeout(stop, 7000);
   console.log('startfire');
 }
 
@@ -121,11 +122,6 @@ function stop() {
   canvas.style.zIndex = -3;
 }
 
-export function stopFireworks() {
-  setTimeout(stop, 7000);
-  console.log('stopfire');
-  return;
-}
 
 //결국에 관건은 explode안에 있는 request에 id를 할당했어야 했다
 // startfireworks에만 fireworkid를 부여하면 cancel했을때 startfirework 애니메이션만 멈추고 explode애니메이션은 여전히 돌아가니깐 폭죽이 계속 터졌던것
