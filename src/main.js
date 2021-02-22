@@ -6,7 +6,7 @@ import * as sound from './sound.js';
 const finishBanner = new Banner();
 
 export let game = new GameBuilder() //
-  .iconCount(1)
+  .iconCount(3)
   .gameDuration(10)
   .build();
 
