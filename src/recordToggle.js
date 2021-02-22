@@ -102,6 +102,7 @@ export class RecordToggle {
       console.log('first record!');
       startFireworks();
       stopFireworks();
+      sound.playfireworksSound();
     } else if (difference > 0) {
       console.log('not that special');
     } else if (difference === 0) {
@@ -110,6 +111,7 @@ export class RecordToggle {
       console.log('new record');
       startFireworks();
       stopFireworks();
+      sound.playfireworksSound();
     }
   }
 
