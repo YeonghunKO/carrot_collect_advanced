@@ -1,7 +1,7 @@
 'use strict';
 
 import * as sound from './sound.js';
-import { startFireworks, stopFireworks } from './fireworks.js';
+import startFireworks from './fireworks.js';
 
 export class RecordToggle {
   constructor() {
