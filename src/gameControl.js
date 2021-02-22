@@ -74,10 +74,10 @@ class Game {
       this.field.displayAllIcon(this.iconCount + 2);
     }
     if (level === 3) {
-      this.field.displayAllIcon(this.iconCount + 8);
+      this.field.displayAllIcon(this.iconCount + 4);
     }
     if (level === 4) {
-      this.field.displayAllIcon(this.iconCount + 14);
+      this.field.displayAllIcon(this.iconCount + 6);
     }
   }
 
