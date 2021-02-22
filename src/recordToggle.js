@@ -44,7 +44,6 @@ export class RecordToggle {
     this._firstRankingDetector(this.timeRecord);
     this._paintRecord(this.recordList);
     this._saveRecord();
-    this.recordBoxtoAgg = [];
   }
   // 요런식으로 만들 함수를 미리 적음으로써 가이드라인을 형성한다
 
@@ -115,6 +114,7 @@ export class RecordToggle {
 
   _saveRecord() {
     localStorage.setItem(this.RECORD_LS, JSON.stringify(this.recordList));
+    this.recordBoxtoAgg = [];
   }
 
   _loadRecord() {
@@ -154,17 +154,6 @@ export class RecordToggle {
     observer.observe(this.firstRankingSpan, config);
   }
   // https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver#monitoring_text_content________changes 참고
-  startFireworks() {
-    this.fireworkSetTimeId = setTimeout(firework, 10);
-  }
-
-  clearFireworks() {
-    clearTimeout(this.fireworkSetTimeId);
-  }
-
-  stopFireworks() {
-    setTimeout(this.clearFireworks, 4000);
-  }
 }
 
 // 기록 갱신하면(first ranking이 바뀌면) 폭죽을 터뜨리자
