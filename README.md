@@ -12,3 +12,7 @@
 
 5. clock ticking added
 
+## let's play this game!
+
+https://yeonghunko.github.io/carrot_collect_advanced/
+
