@@ -16,3 +16,6 @@
 
 https://yeonghunko.github.io/carrot_collect_advanced/
 
+## Today I Learned
+
+https://velog.io/@yhko1992/series/CARROT
